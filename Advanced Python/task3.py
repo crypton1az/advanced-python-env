@@ -1,7 +1,5 @@
-A = float(input())
+A = input()
 
-integer_part = int(A)
-fractional_part = A - integer_part
-
-new_number = fractional_part * 100 + integer_part / 100
+integer_part, fractional_part = A.split('.')
+new_number = fractional_part + "." + integer_part
 print(new_number)
